@@ -12,9 +12,9 @@
         <div class="head">
             <h1>Shivon<span>sh</span></h1>
             <ul class="menu">
-                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#" class="inactive">Store</a></li>
-                <li><a href="#" class="inactive">Contacts</a></li>
+                <li><a href="/feedback">Contacts</a></li>
                 <li><a href="/art">Art</a></li>
             </ul>
         </div>
