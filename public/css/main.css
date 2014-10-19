@@ -148,7 +148,7 @@ a.inactive{
     background-position: -193px -51px;
 }
 .body .form{
-
+    margin: 0 0 3em;
 }
 .body .form input,
 .body .form textarea{
