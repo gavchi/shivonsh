@@ -1681,5 +1681,59 @@
             "framework",
             "laravel"
         ]
+    },
+    {
+        "name": "sayakb/captcha",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sayakb/captcha.git",
+            "reference": "934f5b273677f11ab0082356403ec35a870563a1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sayakb/captcha/zipball/934f5b273677f11ab0082356403ec35a870563a1",
+            "reference": "934f5b273677f11ab0082356403ec35a870563a1",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": ">=4.0.0",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-12-17 02:42:17",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Sayakb\\Captcha": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Muharrem ERIN",
+                "email": "me@mewebstudio.com"
+            },
+            {
+                "name": "Sayak Banerjee",
+                "email": "mail@sayakbanerjee.com",
+                "homepage": "http://sayakbanerjee.com"
+            }
+        ],
+        "description": "Captcha Package for Laravel 4, Fork of mewebstudio/captcha",
+        "homepage": "https://github.com/sayakb/captcha",
+        "keywords": [
+            "L4",
+            "Laravel 4",
+            "captcha",
+            "captcha image",
+            "laravel",
+            "mecaptcha",
+            "security"
+        ]
     }
 ]

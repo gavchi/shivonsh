@@ -97,7 +97,7 @@ a.inactive{
     text-transform: lowercase;
 }
 .body .social{
-    margin: 1em 0 9.45em;
+    margin: 1em 0 2em;
     padding: 0;
 }
 .body .social li{
@@ -147,7 +147,31 @@ a.inactive{
 .body .social li a.tw:hover{
     background-position: -193px -51px;
 }
+.body .form{
 
+}
+.body .form input,
+.body .form textarea{
+    border: 1px solid black;
+    display: block;
+    font-family: Arial;
+    height: 2em;
+    margin: 0.5em auto;
+    padding: 0.2em 0 0.2em 0.5em;
+    width: 65%;
+}
+.body .form textarea{
+    height: 5em;
+}
+.body .form .submit{
+    background: black;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    right: 0;
+    text-align: center;
+    width: 4em;
+}
 /*Foot*/
 .foot{
     color:#999;
