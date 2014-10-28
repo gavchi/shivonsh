@@ -19,3 +19,4 @@ Route::get('/', function()
 Route::controller('art', 'ArtController');
 Route::controller('feedback', 'FeedbackController');
 Route::controller('page', 'PageController');
+Route::controller('secret', 'AdminController');
