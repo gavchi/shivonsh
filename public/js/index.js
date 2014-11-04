@@ -9,6 +9,12 @@ function initFancy(){
 function initMasonry(){
     var $container = $('.gallery');
     // initialize
+    $('img').load(function(){
+        $container.masonry({
+            columnWidth: 445,
+            itemSelector: '.artwork'
+        });
+    });
     $container.masonry({
         columnWidth: 445,
         itemSelector: '.artwork'
