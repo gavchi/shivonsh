@@ -13,6 +13,8 @@ class Tag extends Eloquent  {
 
     public function images()
     {
-        return $this->belongsToMany('Art', 'tagged', 'tag_id', 'image_id');
+        return $this->belongsToMany('Art', 'tagged', 'tag_id', 'image_id')
+            ->withPivot('image_id')
+            ->orderBy('image_id', 'DESC');
     }
 }

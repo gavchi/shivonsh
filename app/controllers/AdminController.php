@@ -58,7 +58,7 @@ class AdminController extends BaseController {
     }
 
     public function anyArt(){
-        $Gallery = Art::with('tags')->get();
+        $Gallery = Art::orderBy('id', 'DESC')->with('tags')->get();
         $Tags = Tag::all();
         return View::make('admin.art')
             ->with('Tags', $Tags)
