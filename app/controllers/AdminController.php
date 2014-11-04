@@ -2,6 +2,11 @@
 
 class AdminController extends BaseController {
 
+    public function __construct(){
+        $this->beforeFilter('auth', array('only' =>
+            array('anyTags', 'anyDeltag', 'anyArt', 'postArtCreate', 'anyDelart')));
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -26,6 +31,11 @@ class AdminController extends BaseController {
         }else{
             return View::make('admin.login');
         }
+    }
+
+    public function anyLogout(){
+        Auth::logout();
+        return Redirect::action('AdminController@getIndex');
     }
 
     public function anyTags(){

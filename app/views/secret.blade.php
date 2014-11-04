@@ -10,10 +10,13 @@
 <div class="main admin">
         <div class="head container">
             <h1>Shivon<span>sh</span></h1>
+            @if (Auth::check())
             <ul class="menu">
                 <li><a href="/secret/tags">Tags</a></li>
                 <li><a href="/secret/art">Art</a></li>
+                <li><a href="/secret/logout">Bye</a></li>
             </ul>
+            @endif
         </div>
         <div class="body container">
             @yield('content')
