@@ -42,16 +42,48 @@ class AdminController extends BaseController {
     public function anyDeltag(){
         $Tag = Tag::find(Input::get('id'));
         $Pivot = $Tag->images();
-        $Tag->delete();
         $Pivot->detach();
+        $Tag->delete();
         return Redirect::action('AdminController@anyTags');
     }
 
     public function anyArt(){
-        $Gallery = Image::with('tags')->get();
+        $Gallery = Art::with('tags')->get();
         $Tags = Tag::all();
         return View::make('admin.art')
             ->with('Tags', $Tags)
             ->with('Gallery', $Gallery);
+    }
+
+    public function postArtCreate(){
+        $tags = Input::get('tag');
+        $image = Input::file('file');
+        $filename = str_random(10).'.'.$image->getClientOriginalExtension();
+        //move to original
+        $image->move(public_path().'/i/full', $filename);
+        // open an image file
+        $img = Image::make(public_path().'/i/full/'.$filename);
+        // resize the image to a width of 300 and constrain aspect ratio (auto height)
+        $img->resize(425, null, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        // save image in desired format
+        $img->save(public_path().'/i/'.$filename);
+
+        $Art = new Art();
+        $Art->file = $filename;
+        $Art->save();
+        $Art->tags()->sync($tags);
+        return Redirect::action('AdminController@anyArt');
+    }
+
+    public function anyDelart(){
+        $Art = Art::find(Input::get('id'));
+        $Pivot = $Art->tags();
+        $Pivot->detach();
+        $Art->delete();
+        File::delete(public_path().'/i/full/'.$Art->file);
+        File::delete(public_path().'/i/'.$Art->file);
+        return Redirect::action('AdminController@anyArt');
     }
 }

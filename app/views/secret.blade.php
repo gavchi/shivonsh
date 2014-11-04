@@ -7,25 +7,25 @@
     <title>SHIVONSH</title>
 </head>
 <body>
-<div class="main">
-    <div class="container">
-        <div class="head">
+<div class="main admin">
+        <div class="head container">
             <h1>Shivon<span>sh</span></h1>
             <ul class="menu">
                 <li><a href="/secret/tags">Tags</a></li>
                 <li><a href="/secret/art">Art</a></li>
             </ul>
         </div>
-        <div class="body">
+        <div class="body container">
             @yield('content')
         </div>
-        <div class="foot">
+            @yield('gallery')
+        <div class="foot container">
             <div class="copy">2014 «SHIVONSH»</div>
         </div>
-    </div>
 </div>
 <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="/js/index.js"></script>
 </body>
 </html>

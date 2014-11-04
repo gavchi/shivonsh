@@ -13,6 +13,6 @@ class Tag extends Eloquent  {
 
     public function images()
     {
-        return $this->belongsToMany('Image', 'tagged', 'tag_id', 'image_id');
+        return $this->belongsToMany('Art', 'tagged', 'tag_id', 'image_id');
     }
 }

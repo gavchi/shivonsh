@@ -8,6 +8,8 @@
     <a href="/art/">All</a>
     @endif
 </div>
+@stop
+@section('gallery')
 <div class="gallery">
     @foreach($Gallery as $Image)
         <a class="artwork" rel="gallery" href="/i/full/{{$Image->file}}"><img src="/i/{{$Image->file}}"></a>

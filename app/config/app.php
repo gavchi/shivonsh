@@ -122,6 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Sayakb\Captcha\CaptchaServiceProvider',
+        'Intervention\Image\ImageServiceProvider',
 
 	),
 
@@ -190,6 +191,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
         'Captcha' => 'Sayakb\Captcha\Facades\Captcha',
+        'Image' => 'Intervention\Image\Facades\Image',
 
 	),
 

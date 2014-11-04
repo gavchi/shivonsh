@@ -10,7 +10,7 @@ class ArtController extends BaseController {
     public function getIndex()
     {
         $Tags = Tag::orderBy('name')->get();
-        $Gallery = Image::all();
+        $Gallery = Art::all();
         return View::make('pages.art')
             ->with('Tags', $Tags)
             ->with('Gallery', $Gallery)
