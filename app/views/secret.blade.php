@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link href="/css/main.css" type="text/css" rel="stylesheet">
+    <link href="/css/main.css?{{str_random(10)}}" type="text/css" rel="stylesheet">
     <link href="/css/jquery.fancybox.css" type="text/css" rel="stylesheet">
     <title>SHIVONSH</title>
 </head>
@@ -29,6 +29,6 @@
 <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/index.js?{{str_random(10)}}"></script>
 </body>
 </html>
