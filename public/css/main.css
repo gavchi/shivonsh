@@ -223,3 +223,6 @@ a.inactive{
 .admin .gallery .artwork .delete:hover{
     color: red;
 }
+.admin ul{
+    list-style-type: none;
+}
