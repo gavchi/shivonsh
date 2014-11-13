@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function()
-{
-    return View::make('pages.index');
-});
+Route::get('/', 'ArtController@getIndex');
 
 Route::controller('art', 'ArtController');
 Route::controller('feedback', 'FeedbackController');

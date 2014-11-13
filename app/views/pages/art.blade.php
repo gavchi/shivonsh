@@ -5,7 +5,7 @@
         <a href="/art/tag/{{$Tag->id}}" @if($active == $Tag->id) class="active" @endif>{{$Tag->name}}</a>
     @endforeach
     @if($active)
-    <a href="/art/">All</a>
+    <a href="/">All</a>
     @endif
 </div>
 @stop

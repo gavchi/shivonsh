@@ -11,10 +11,9 @@
         <div class="head container">
             <h1>Shivon<span>sh</span></h1>
             <ul class="menu">
-                <li><a href="/">Home</a></li>
                 <li><a href="#" class="inactive">Store</a></li>
                 <li><a href="/feedback">Contacts</a></li>
-                <li><a href="/art">Art</a></li>
+                <li><a href="/">Art</a></li>
             </ul>
         </div>
         <div class="body container">
