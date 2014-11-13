@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<h2>Contact with me</h2>
+<h2>Contact me</h2>
 <h3 class="active">​SHIVONSH | Alexandra Sh</h3>
 <h4>shivonsh@gmail.com</h4>
 <ul class="social">
