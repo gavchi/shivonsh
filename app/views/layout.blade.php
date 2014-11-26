@@ -11,7 +11,7 @@
         <div class="head container">
             <h1>Shivon<span>sh</span></h1>
             <ul class="menu">
-                <li><a href="#" class="inactive">Store</a></li>
+                <li><a href="http://store.shivonsh.com" target="_blank" class="inactive">Store</a></li>
                 <li><a href="/feedback">Contacts</a></li>
                 <li><a href="/">Art</a></li>
             </ul>
