@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name=viewport content="width=500">
     <link href="/css/main.css?{{str_random(10)}}" type="text/css" rel="stylesheet">
     <link href="/css/jquery.fancybox.css" type="text/css" rel="stylesheet">
     <title>SHIVONSH</title>
