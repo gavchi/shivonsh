@@ -1,5 +1,8 @@
+html{
+    background: url("/i/gradient.png") repeat-x #c2c2c2;
+}
 html, body{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     color: black;
     padding:0;
@@ -34,7 +37,7 @@ a.inactive{
 .head .menu{
     list-style:none;
     padding:0;
-    margin:1.5em 0 0
+    margin:2.5em 0 0
 }
 .head .menu li{
     display: inline;
@@ -48,6 +51,9 @@ a.inactive{
     font-size: 7em;
     font-weight: normal;
     margin:0;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+    font-family: "Times New Roman", Arial, sans-serif;
 }
 .head h1 span{
     color:red;
@@ -59,7 +65,8 @@ a.inactive{
     width: 700px;
 }
 .body .tags a{
-    font-size: 1em;
+    font-size: 0.8em;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
     margin: 0 0.5em 0.5em;
     display: inline-block;
@@ -164,7 +171,7 @@ a.inactive{
 .body .form textarea{
     border: 1px solid black;
     display: block;
-    font-family: Arial;
+    font-family:  Arial, sans-serif;
     height: 2em;
     margin: 0.5em auto;
     padding: 0.2em 0 0.2em 0.5em;

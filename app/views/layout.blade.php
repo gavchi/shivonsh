@@ -9,7 +9,7 @@
 <body>
 <div class="main">
         <div class="head container">
-            <h1>Shivon<span>sh</span></h1>
+            <h1>Shivonsh</h1>
             <ul class="menu">
                 <li><a href="http://store.shivonsh.com" target="_blank">Store</a></li>
                 <li><a href="/feedback">Contacts</a></li>
