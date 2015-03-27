@@ -1,9 +1,18 @@
+function showPicByHash(){
+    var hash = location.hash.substr(1);
+    console.log(hash);
+}
 function initFancy(){
+    var bigPic = $(this).attr('href');
+    console.log(bigPic);
+    var fancyoptions = {href:bigPic};
     //for admin
     if($(".artwork .art").length){
         $(".artwork .art").fancybox();
     }else{
-        $(".artwork").fancybox();
+        $(".artwork").fancybox(
+            fancyoptions
+        );
     }
 }
 function initMasonry(){
@@ -23,4 +32,5 @@ function initMasonry(){
 $(document).ready(function() {
     initFancy();
     initMasonry();
+    showPicByHash();
 });

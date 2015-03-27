@@ -12,7 +12,7 @@
 @section('gallery')
 <div class="gallery">
     @foreach($Gallery as $Image)
-        <a class="artwork" rel="gallery" href="/i/full/{{$Image->file}}"><img src="/i/{{$Image->file}}"></a>
+        <a class="artwork" rel="gallery" href="#{{$Image->file}}"><img src="/i/{{$Image->file}}"></a>
     @endforeach
 </div>
 @stop
