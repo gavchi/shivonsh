@@ -3,9 +3,12 @@ function showPicByHash(){
     console.log(hash);
 }
 function initFancy(){
-    var bigPic = $(this).attr('href');
-    console.log(bigPic);
-    var fancyoptions = {href:bigPic};
+    var fancyoptions = {
+        beforeLoad : function(){
+        var url= $(this.element).attr('href');
+        this.href = url.substr(1)
+        }
+    };
     //for admin
     if($(".artwork .art").length){
         $(".artwork .art").fancybox();
