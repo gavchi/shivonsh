@@ -13,7 +13,7 @@ function startFancy(selector){
                 this.title = '<ul class="social_i">' +
                 '<li><a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://'+location.host+'/art/image/'+$(this.element).attr('href')+'&p[images][0]=http://'+location.host+'/i/'+$(this.element).attr('href')+'" class="fb" target="_blank"></a></li>' +
                 '<li><a href="http://www.tumblr.com/share?url=http://'+location.host+'/art/image/'+$(this.element).attr('href')+'" class="tb" target="_blank"></a></li>' +
-                '<li><a href="http://twitter.com/share?url=http://'+location.host+'/art/image/'+$(this.element).attr('href')+'&related=shivonsh" class="tw" target="_blank"></a></li>' +
+                '<li><a href="http://twitter.com/share?url=http://'+location.host+'/art/image/'+$(this.element).attr('href')+'&text=Отличная работа @shivonsh&related=shivonsh" class="tw" target="_blank"></a></li>' +
                 '<li><a href="http://vkontakte.ru/share.php?url=http://'+location.host+'/art/image/'+$(this.element).attr('href')+'&image=http://'+location.host+'/i/'+$(this.element).attr('href')+'" class="vk" target="_blank"></a></li>' +
                 '</ul>';
             },
