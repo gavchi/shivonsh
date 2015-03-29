@@ -1,21 +1,32 @@
-function showPicByHash(){
-    var hash = location.hash.substr(1);
-    console.log(hash);
+function startFancy(selector){
+    $(function () {
+        $(selector).fancybox({
+            transitionIn: 'elastic',
+            transitionOut: 'elastic',
+            titlePosition: 'inside',
+            preload: 0,
+            beforeLoad : function(){
+                var url= '/i/full/'+$(this.element).attr('href');
+                this.href = url;
+            },
+            afterLoad: function (links) {
+                location.hash = links.href.substring(8);
+            },
+            afterClose: function () {
+                location.hash = '';
+            }
+        });
+        if(location.hash){
+            $(selector+'[href="' + location.hash.substring(1) + '"]').trigger('click');
+        }
+    });
 }
 function initFancy(){
-    var fancyoptions = {
-        beforeLoad : function(){
-        var url= $(this.element).attr('href');
-        this.href = url.substr(1)
-        }
-    };
     //for admin
     if($(".artwork .art").length){
-        $(".artwork .art").fancybox();
+        startFancy('.artwork .art');
     }else{
-        $(".artwork").fancybox(
-            fancyoptions
-        );
+        startFancy('.artwork');
     }
 }
 function initMasonry(){
@@ -35,5 +46,4 @@ function initMasonry(){
 $(document).ready(function() {
     initFancy();
     initMasonry();
-    showPicByHash();
 });
