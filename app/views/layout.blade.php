@@ -25,7 +25,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta property="og:image" content="/i/shivonsh-logo.png"/>
+    <meta property="og:image" content="/i/shivonsh-logo.jpg"/>
 
 </head>
 <body>
