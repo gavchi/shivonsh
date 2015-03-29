@@ -27,4 +27,8 @@ class ArtController extends BaseController {
             ->with('Gallery', $Gallery)
             ->with('active', $ActiveTag->id);
     }
+
+    public function getImage($id){
+        return Redirect::to('/#'.$id);
+    }
 }
