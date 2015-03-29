@@ -113,56 +113,79 @@ a.inactive{
     margin: 1em 0 0;
     text-transform: lowercase;
 }
-.body .social{
+.social,
+.social_i{
     margin: 1em 0 2em;
     padding: 0;
 }
-.body .social li{
+.social_i{
+    position: absolute;
+    top: 0;
+    left: -110px;
+}
+.social li,
+.social_i li{
     display: inline;
     margin: 1em;
 }
-.body .social li a{
+.social li a,
+.social_i li a{
     background: url("/i/social.gif") 0 0 no-repeat;
     display: inline-block;
     height: 50px;
     width: 49px;
 }
-.body .social li a.fb{
+.social_i li a{
+    background: url("/i/social_i.gif") 0 0 no-repeat;
+}
+.social li a.fb,
+.social_i li a.fb{
     background-position: 0 0;
 }
-.body .social li a.vk{
+.social li a.vk,
+.social_i li a.vk{
     background-position: -49px 0;
     width: 48px;
 }
-.body .social li a.in{
+.social li a.in,
+.social_i li a.in{
     background-position: -97px 0;
     height: 51px;
     width: 48px;
 }
-.body .social li a.tb{
+.social li a.tb,
+.social_i li a.tb{
     background-position: -145px 0;
     height: 52px;
     width: 48px;
 }
-.body .social li a.tw{
+.social li a.tw,
+.social_i li a.tw{
     background-position: -193px 0;
     height: 52px;
     width: 48px;
 }
-.body .social li a.fb:hover{
+.social li a.fb:hover,
+.social_i li a.fb:hover{
     background-position: 0 -50px;
 }
-.body .social li a.vk:hover{
+.social li a.vk:hover,
+.social_i li a.vk:hover{
     background-position: -49px -50px;
 }
-.body .social li a.in:hover{
+.social li a.in:hover,
+.social_i li a.in:hover{
     background-position: -97px -50px;
 }
-.body .social li a.tb:hover{
+.social li a.tb:hover,
+.social_i li a.tb:hover{
     background-position: -145px -50px;
 }
-.body .social li a.tw:hover{
+.social li a.tw:hover{
     background-position: -193px -51px;
+}
+.social_i li a.tw:hover{
+    background-position: -193px -50px;
 }
 .body .form{
     margin: 0 0 3em;
