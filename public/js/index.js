@@ -16,6 +16,8 @@ function startFancy(selector){
                 '<li><a href="http://twitter.com/share?url=http://'+location.host+'/art/image/'+$(this.element).attr('href')+'&text=Отличная работа @shivonsh&related=shivonsh" class="tw" target="_blank"></a></li>' +
                 '<li><a href="http://vkontakte.ru/share.php?url=http://'+location.host+'/art/image/'+$(this.element).attr('href')+'&image=http://'+location.host+'/i/'+$(this.element).attr('href')+'" class="vk" target="_blank"></a></li>' +
                 '</ul>';
+                $('meta[property="og:image"]').remove();
+                $(this.element).append('<meta property="og:image" content="http://'+location.host+'/i/'+$(this.element).attr('href')+'"/>');
             },
             afterClose: function () {
                 location.hash = '';
