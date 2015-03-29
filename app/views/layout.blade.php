@@ -43,7 +43,7 @@
         </div>
             @yield('gallery')
         <div class="foot container">
-            <div class="copy">2014 «SHIVONSH»</div>
+            <div class="copy">2014-{{date('Y')}} «SHIVONSH»</div>
         </div>
 </div>
 <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>

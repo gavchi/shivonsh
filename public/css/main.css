@@ -37,7 +37,7 @@ a.inactive{
 .head .menu{
     list-style:none;
     padding:0;
-    margin:2.5em 0 0
+    margin:1em 0 0
 }
 .head .menu li{
     display: inline;
@@ -61,7 +61,7 @@ a.inactive{
 
 /*Body*/
 .body .tags{
-    margin: 4em auto 0;
+    margin: 1.5em auto 0;
     width: 700px;
 }
 .body .tags a{
@@ -76,7 +76,7 @@ a.inactive{
 }
 .gallery{
     width: 1335px;
-    margin:0 auto;
+    margin:1.2em auto 0;
 }
 .gallery .artwork{
     display: block;
