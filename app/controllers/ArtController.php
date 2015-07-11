@@ -21,7 +21,7 @@ class ArtController extends BaseController {
     {
         $Tags = Tag::orderBy('name')->get();
         $ActiveTag = Tag::with('images')->findOrFail($id);
-        $Gallery = $ActiveTag->images;
+        $Gallery = $ActiveTag->images()->simplePaginate(9);
         return View::make('pages.art')->with('Tags', $Tags)
             ->with('Tags', $Tags)
             ->with('Gallery', $Gallery)
