@@ -19,5 +19,6 @@
             <a class="delete" href="/secret/delart?id={{$Image->id}}"> X </a>
         </div>
     @endforeach
+    {{$Gallery->links()}}
 </div>
 @stop
