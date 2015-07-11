@@ -37,15 +37,18 @@ function initFancy(){
 function initMasonry(){
     var $container = $('.gallery');
     // initialize
-    $('img').load(function(){
+    /*
+    $('img').imagesLoaded(function(){
         $container.masonry({
             columnWidth: 445,
             itemSelector: '.artwork'
         });
-    });
-    $container.masonry({
-        columnWidth: 445,
-        itemSelector: '.artwork'
+    });*/
+    $container.imagesLoaded(function () {
+        $container.masonry({
+            columnWidth: 445,
+            itemSelector: ".artwork"
+        });
     });
 }
 $(document).ready(function() {
