@@ -37,6 +37,32 @@ function initFancy(){
 function initMasonry(){
     var $container = $('.gallery');
     // initialize
+
+    $container.imagesLoaded(function(){
+        $container.masonry({
+            itemSelector: '.artwork',
+            columnWidth: 445
+        });
+    });
+
+    $container.infinitescroll({
+            navSelector  : '.pager',    // селектор контейнера для навигации по старинцам
+            nextSelector : '.pager li a[rel="next"]',  // селектор для навигации
+            itemSelector : '.artwork',     // селектор блоков, к которым применяются эффекты
+            donetext  : 'Больше нет страниц для загрузки!',
+            loadingImg : 'http://i.imgur.com/6RMhx.gif', // изображение ajaxljader
+            debug: true, // выводит ошибки на консоль
+        },
+        // вызываем Masonry
+        function( newElements ) {
+            var $newElems = $( newElements );
+            // запускаем эффекты только после полной загрузки изображений
+            $newElems.imagesLoaded(function(){
+                $container.masonry( 'appended', $newElems, true );
+            });
+        }
+    );
+
     /*
     $('img').imagesLoaded(function(){
         $container.masonry({
@@ -44,14 +70,15 @@ function initMasonry(){
             itemSelector: '.artwork'
         });
     });*/
+    /*
     $container.imagesLoaded(function () {
         $container.masonry({
             columnWidth: 445,
             itemSelector: ".artwork"
         });
-    });
+    });*/
 }
-$(document).ready(function() {
+$(function() {
     initFancy();
     initMasonry();
 });

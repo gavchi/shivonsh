@@ -15,4 +15,5 @@
         <a class="artwork" rel="gallery" href="{{$Image->file}}"><img src="/i/{{$Image->file}}"></a>
     @endforeach
 </div>
+    {{$Gallery->links()}}
 @stop

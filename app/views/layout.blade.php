@@ -50,6 +50,7 @@
 <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/js/jquery.infinitescroll.min.js"></script>
 <script type="text/javascript" src="/js/index.js?{{str_random(10)}}"></script>
 </body>
 </html>
