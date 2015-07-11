@@ -6,7 +6,8 @@
 	"require": {
         "laravel/framework": "4.2.*",
         "sayakb/captcha": "dev-master",
-        "intervention/image": "2.*"
+        "intervention/image": "2.*",
+		"jenssegers/agent": "^2.1"
 	},
 	"autoload": {
 		"classmap": [

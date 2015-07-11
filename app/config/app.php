@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Sayakb\Captcha\CaptchaServiceProvider',
         'Intervention\Image\ImageServiceProvider',
+		'Jenssegers\Agent\AgentServiceProvider',
 
 	),
 
@@ -192,6 +193,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
         'Captcha' => 'Sayakb\Captcha\Facades\Captcha',
         'Image' => 'Intervention\Image\Facades\Image',
+		'Agent' => 'Jenssegers\Agent\Facades\Agent',
 
 	),
 
